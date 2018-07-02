@@ -26,6 +26,8 @@
 		05F38EF720E3649000E15410 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F38EF620E3649000E15410 /* APIService.swift */; };
 		05F38EF920E3688B00E15410 /* Moya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F38EF820E3688B00E15410 /* Moya.framework */; };
 		05F38EFB20E3688B00E15410 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F38EFA20E3688B00E15410 /* Result.framework */; };
+		05F38EFD20E5D09400E15410 /* NavigatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F38EFC20E5D09400E15410 /* NavigatorService.swift */; };
+		05F38EFF20E9BC1400E15410 /* TestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F38EFE20E9BC1400E15410 /* TestVC.swift */; };
 		8AF778FB518D6D8607BABF89 /* Pods_RxSwiftWithMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3B55E232C4D7AB99F9F6B4 /* Pods_RxSwiftWithMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		05F38EF620E3649000E15410 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		05F38EF820E3688B00E15410 /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		05F38EFA20E3688B00E15410 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05F38EFC20E5D09400E15410 /* NavigatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigatorService.swift; sourceTree = "<group>"; };
+		05F38EFE20E9BC1400E15410 /* TestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestVC.swift; sourceTree = "<group>"; };
 		289E33AD233C03B33C8D8470 /* Pods-RxSwiftWithMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftWithMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftWithMVVM/Pods-RxSwiftWithMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		9C3B55E232C4D7AB99F9F6B4 /* Pods_RxSwiftWithMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftWithMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEFDCF23A25D3588DF5D04F8 /* Pods-RxSwiftWithMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftWithMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxSwiftWithMVVM/Pods-RxSwiftWithMVVM.release.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 				05B4F55820C4DE3700974242 /* Assets.xcassets */,
 				05B4F55A20C4DE3700974242 /* LaunchScreen.storyboard */,
 				05B4F55D20C4DE3700974242 /* Info.plist */,
+				05F38EFE20E9BC1400E15410 /* TestVC.swift */,
 			);
 			path = RxSwiftWithMVVM;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				05F38EF620E3649000E15410 /* APIService.swift */,
+				05F38EFC20E5D09400E15410 /* NavigatorService.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -296,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F38EFF20E9BC1400E15410 /* TestVC.swift in Sources */,
 				05B4F57720C4E69B00974242 /* RPHomeViewModel.swift in Sources */,
 				05B4F57320C4E58500974242 /* RPModel.swift in Sources */,
 				05B4F57520C4E61300974242 /* RPHomeVC.swift in Sources */,
@@ -304,6 +311,7 @@
 				05B4F55220C4DE3400974242 /* AppDelegate.swift in Sources */,
 				05F38EF720E3649000E15410 /* APIService.swift in Sources */,
 				05F38EF420E362B800E15410 /* TestColllectionViewCell.swift in Sources */,
+				05F38EFD20E5D09400E15410 /* NavigatorService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

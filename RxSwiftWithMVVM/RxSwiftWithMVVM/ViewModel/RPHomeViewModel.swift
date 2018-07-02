@@ -12,13 +12,12 @@ import RxCocoa
 import Alamofire
 import Moya
 
-class RPHomeViewModel: NSObject {
-    public var extraHeight:Float = 18
+class RPHomeViewModel {
+    public var extraHeight:Float = 32
     public var template_array = Variable<[Template]>([])
     let disposeBag = DisposeBag()
     
-    func fetchHomeViewData(){
-//        APIService.requestHomePageData()
+    init(){
         APIService.homePageSubject.single().subscribe{ (event) in
             switch event {
             case .next(let templates):
@@ -31,6 +30,11 @@ class RPHomeViewModel: NSObject {
                 break
             }
         }.disposed(by: disposeBag)
+    }
+    
+    func fetchHomeViewData(){
+//        APIService.requestHomePageData()
+       
         
         APIService.request(.homepage(page: "1", page_size: "20"))
     }

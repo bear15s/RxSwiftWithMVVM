@@ -39,6 +39,7 @@ class RPHomeVC: UIViewController,UICollectionViewDelegate,UICollectionViewDataSo
             self?.collectionView?.reloadData()
         }).disposed(by: disposeBag)
         homeViewModel.fetchHomeViewData()
+        
     }
 
     override func didReceiveMemoryWarning() {

@@ -21,7 +21,7 @@ class TestColllectionViewCell :UICollectionViewCell{
     public lazy var coverView = { () -> UIImageView in
         let imageView = UIImageView.init()
         imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 4
+//        imageView.layer.cornerRadius = 4
         imageView.layer.masksToBounds = true
         return imageView
     }()
@@ -29,6 +29,7 @@ class TestColllectionViewCell :UICollectionViewCell{
     public lazy var titleLabel = { () -> UILabel in
         let label = UILabel.init()
         label.numberOfLines = 2
+        label.layer.masksToBounds = true
 //        label.font = UIFont.init
         return label
     }()
@@ -43,6 +44,7 @@ class TestColllectionViewCell :UICollectionViewCell{
             self.coverView.snp.updateConstraints { (make) in
                 make.height.equalTo(height)
             }
+            
             if let url = URL(string: (self.template?.image!)!) {
                 self.coverView.kf.setImage(with: url)
             }
@@ -64,6 +66,7 @@ class TestColllectionViewCell :UICollectionViewCell{
 extension TestColllectionViewCell {
     func setupUI()  {
         self.contentView.backgroundColor = self.getRandomColor()
+        self.titleLabel.backgroundColor = self.contentView.backgroundColor
         //        self.coverView.backgroundColor = self.getRandomColor()
         self.contentView.addSubview(coverView)
         coverView.snp.makeConstraints { (make) in
@@ -73,11 +76,11 @@ extension TestColllectionViewCell {
         
         self.contentView.addSubview(self.titleLabel)
         
-        let titleHeight:CGFloat = 13.0
+        let titleHeight:CGFloat = 16.0
         self.titleLabel.snp.makeConstraints { (make) in
             make.left.equalTo(self.contentView).offset(8);
             make.width.equalTo(105.5);
-            make.top.equalTo(self.coverView.snp.bottom);
+            make.top.equalTo(self.coverView.snp.bottom).offset(8);
             make.height.equalTo(titleHeight);
         }
        // MARK: - 说明文字,带分割线

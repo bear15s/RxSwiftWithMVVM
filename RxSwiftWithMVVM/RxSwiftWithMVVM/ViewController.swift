@@ -20,9 +20,10 @@ class ViewController: UIViewController {
     @IBAction func push(_ sender: UIButton) {
         let homeVC = RPHomeVC()
 //        let nav = UINavigationController.init(rootViewController: homeVC)
-        self.present(homeVC, animated: true) {
-            
-        }
+        self.navigationController?.pushViewController(homeVC, animated: true)
+//        self.present(homeVC, animated: true) {
+//
+//        }
     }
     
     
